@@ -80,26 +80,3 @@ class PromiseAPlus<T> {
     });
   };
 }
-
-const step1 = () =>
-  new PromiseAPlus((resolve) => {
-    setTimeout(() => {
-      console.log(1, "step1");
-      resolve(1);
-    }, 1000);
-  });
-
-const step2 = (value) =>
-  new PromiseAPlus((resolve) => {
-    setTimeout(() => {
-      const value1 = value * 100;
-      console.log(value1, "step2");
-      resolve(value1);
-    }, 2000);
-  });
-
-step1()
-  .then((value) => step2(value))
-  .then((value) => {
-    console.log(value);
-  });
