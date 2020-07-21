@@ -83,8 +83,8 @@ then 方法的返回值可以是一个任意值，如果返回值是一个新的
 
 ### 安装 RunJS
 
-可以通过安装 RunJS，然后使用 RunJS 打开当前 promise-a-plus.ts 文件声明 PromiseAPlus 类。
+可以通过安装 RunJS，然后使用 RunJS 打开当前 promiseAPlus.ts 文件声明 PromiseAPlus 类。
 
 ### 安装 ts-node
 
-也可以通过安装 ts-node，然后在终端执行 ts-node promise-a-plus.ts 来声明 PromiseAPlus 类。
+也可以通过安装 ts-node，然后在终端执行 ts-node promiseAPlus.ts 来声明 PromiseAPlus 类。
