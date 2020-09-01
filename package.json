@@ -1,0 +1,19 @@
+{
+  "name": "promise-a-plus",
+  "version": "1.0.0",
+  "repository": "git@github.com:LaamGinghong/Promise-A-Plus.git",
+  "author": "LaamGinghong <351390560@qq.com>",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node demo.js"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7"
+  }
+}
