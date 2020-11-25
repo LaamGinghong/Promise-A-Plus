@@ -1,5 +1,7 @@
 # 手写 Promise A+
 
+>   English：[en.md](./en.md)
+
 ## 术语
 
 ### 解决（fulfill）
@@ -18,8 +20,6 @@
 
 拒绝的原因，指的是 promise 被拒绝是传递给拒绝回调函数的值。
 
-
-
 ## Promise 的状态
 
 >   一个 Promise 的当前状态必须为以下三种状态中的一种
@@ -35,8 +35,6 @@
 ### 拒绝态（rejected）
 
 处于拒绝态时，promise 不能迁移至其他任何状态，必须拥有一个不可变的据因。
-
-
 
 ## Then 方法
 
@@ -77,14 +75,8 @@ then 方法可以被同一个 promise 多次调用：
 
 then 方法的返回值可以是一个任意值，如果返回值是一个新的 Promise，那么下一个 then 会在新的 Promise 执行后再调用；如果返回值不是一个 Promise，那么下一个 then 则会被立即调用。
 
-
-
 ## 使用方法
 
-### 安装 RunJS
+1.  运行脚本 `yarn start` 启动本地 http 服务，端口号默认为 3000，如果想去修改，请修改 `server/index.js` ；
+2.  运行脚本 `yarn test` 通过 node 运行对应脚本文件，即可查看对应脚本的输出。
 
-可以通过安装 RunJS，然后使用 RunJS 打开当前 promiseAPlus.ts 文件声明 PromiseAPlus 类。
-
-### 安装 ts-node
-
-也可以通过安装 ts-node，然后在终端执行 ts-node promiseAPlus.ts 来声明 PromiseAPlus 类。
